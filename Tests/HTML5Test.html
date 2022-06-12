@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Html5 Test</title>
+  </head>
+  <body>
+    <header>
+        <div style="text-align: center;">
+              <h2 id="mytitle">Your Character Research</h2>
+              <p><em>First i suggest you to watch one video and to listen one audio</em></p>
+              <p><em>Then you must fill short form to collection data</em></p>
+              <p><em>After that we will analyze your character</em></p>
+              <p><em>Good luck and have fun!</em></p>
+        </div>
+    </header>
+    <div style="text-align: center;">
+        <figure>
+              <figcaption><strong>Characters</strong></figcaption>
+              <img src="../Images/сharacters.jpg" width="300" height="300" alt="Characters image">
+        </figure>
+    </div>
+    <ol type="I">
+        <li>
+              Video<br>
+                <video width="400" height="300" controls>
+                  <source src="../video/road.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+              Audio<br>
+                <audio controls>
+                  <source src="../audio/Julian Jordan - Thunder.mp3" type="audio/mp3">
+                </audio>
+            </li>
+    </ol>
+
+    <form>
+            <h3>Fill This Form</h3>
+            <ul type=>
+                <li>
+                  <label>First name:
+                    <input placeholder="Enter your name" name="username" type="text" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Last name:
+                    <input placeholder="Enter your lastname" name="userlastname" type="text" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Email:
+                    <input placeholder="Enter your email" name="useremail" type="email" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Password:
+                    <input placeholder="Enter your password" name="userpassword" type="password" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Stay logged in:
+                    <input name="checkbox" type="checkbox">
+                  </label>
+                </li>
+                <li>
+                  <label>Male:
+                    <input name="sex" type="radio" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Female:
+                    <input name="sex" type="radio" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Age:
+                    <input name="userage" type="text" pattern="[0-9]{2}" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Choese your favorite color:
+                    <input name="usercolor" type="color" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Choese your favorite animal:
+                    <datalist id="animals">
+                      <option>Cat</option>
+                      <option>Dog</option>
+                      <option>Bizon</option>
+                      <option>Lama</option>
+                      <option>Horse</option>
+                    </datalist>
+                    <input placeholder="Choese animal" name="useranimal" type="text" list="animals" required>
+                  </label>
+                </li>
+                <li>
+                  <label>Submit:
+                    <input value="Push" type="submit">
+                  </label>
+                </li>
+
+
+            </ul>
+    </form>
+
+
+  <button>
+      <a href="#mytitle">
+      UpPage
+  </button>
+
+  </body>
+</html>
